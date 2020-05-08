@@ -9,6 +9,20 @@
 		},
 		"description": "SAPUI5 Resources"
 	}, {
+		"path": "/themedesigner",
+		"target": {
+			"type": "application",
+			"name": "themedesigner"
+		},
+		"description": "Route for theme designer"
+	}, {
+		"path": "/theme1",
+		"target": {
+			"type": "application",
+			"name": "theme1"
+		},
+		"description": "Route for theme"
+	}, {
 		"path": "/OpenWeather",
 		"target": {
 			"type": "destination",

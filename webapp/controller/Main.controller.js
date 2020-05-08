@@ -46,14 +46,42 @@ sap.ui.define([
 			var aFilters = [];
 			var sQuery = oEvent.getSource().getValue();
 			if (sQuery && sQuery.length > 0) {
-				var filter = new Filter("Windm", sap.ui.model.FilterOperator.Contains, sQuery);
-				aFilters.push(filter);
+				aFilters.push(new Filter("Windm", sap.ui.model.FilterOperator.Contains, sQuery));
 			}
 
 			// update list binding
 			var oList = this.byId("list0");
 			var oBinding = oList.getBinding("items");
 			oBinding.filter(aFilters, "Application");
+		},
+
+		onlyFilter: function (oEvent) {
+			// add filter for search
+			var aFilters = [];
+			var sQuery = oEvent.getSource().getKey();
+			var filter = new Filter("Type", "EQ", sQuery);
+			aFilters.push(filter);
+
+			// update list binding
+			var oList = this.byId("list0");
+			var oBinding = oList.getBinding("items");
+			oBinding.filter(aFilters, "Application");
+			//iconcolor
+			var oList = oEvent.getSource();
+			var oItems = oList.getItems();
+			for (var i = 0; i < oItems.length; i++) {
+				var oItem = oItems[i];
+				var oIcon = oItem._getImage();
+				var oContext = oItems[i].getBindingContext().getProperty("Type");
+				if (oContext === "Success") {
+					oIcon.addStyleClass("greenColor");
+				} else if (oContext === "Warning") {
+					oIcon.addStyleClass("yellowColor");
+				} else {
+					oIcon.addStyleClass("redColor");
+				}
+			}
+
 		},
 
 		onSelectionChange: function (oEvent) {
@@ -84,15 +112,18 @@ sap.ui.define([
 		onSelectionChangeNot: function (oEvent) {
 			var emptyView = sap.ui.getCore().byId("container-beat---idEmpty");
 			emptyView.getController().byId("sf1").bindElement(oEvent.getSource().getBindingContext().getPath());
-			emptyView.getController().byId("sf1").setVisible(true);
-			emptyView.getController().byId("fb1").setVisible(true);
-			emptyView.getController().byId("sf0").setVisible(false);
-			emptyView.getController().byId("sd").setVisible(true);
-			emptyView.getController().byId("sc").setVisible(false);
-			emptyView.getController().byId("edit").setVisible(true);
-			emptyView.getController().byId("save").setVisible(false);
-			emptyView.getController().byId("cancel").setVisible(false);
+			var sArray = ["sf1", "fb1", "sd", "edit"];
+			var hArray = ["sf0", "sc", "save", "cancel"];
 
+			function onShow(value) {
+				emptyView.getController().byId(value).setVisible(true);
+			}
+
+			function onHide(value) {
+				emptyView.getController().byId(value).setVisible(false);
+			}
+			sArray.forEach(onShow);
+			hArray.forEach(onHide);
 		}
 
 		/**
