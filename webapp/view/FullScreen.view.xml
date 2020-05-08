@@ -1,0 +1,22 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="beat.beat.controller.FullScreen" xmlns:vbm="sap.ui.vbm" xmlns:l="sap.ui.layout">
+	<Page title="{i18n>winl}">
+		<content>
+			<l:FixFlex class="fixFlexVertical">
+				<!--<l:fixContent></l:fixContent>-->
+				<l:flexContent>
+					<vbm:GeoMap id="GeoMap" width="100%" height="100%" initialZoom="15" initialPosition="14.969902;51.109342;0">
+						<vbm:vos>
+							<vbm:Spots click="onClickItem" posChangeable="true" scaleChangeable="false" contextMenu="onContextMenuItem" items="{/NotificationHdSet}">
+								<vbm:items>
+									<vbm:Spot id="Spot" position="{Position}" type="{Type}" click="onSelectionChange"
+										tooltip="{Windm}&#xD;{Type}&#xA;Last Maintenance Date: {MDate}"/>
+								</vbm:items>
+							</vbm:Spots>
+						</vbm:vos>
+					</vbm:GeoMap>
+				</l:flexContent>
+			</l:FixFlex>
+		</content>
+	</Page>
+</mvc:View>

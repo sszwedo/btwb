@@ -1,0 +1,18 @@
+<mvc:View controllerName="beat.beat.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Page showHeader="false" enableScrolling="false">
+		<Bar id="bar0">
+			<contentLeft>
+				<Image xmlns:f="sap.f" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+					src="https://i.pinimg.com/originals/c6/85/42/c68542c40b275e7e5b845d17d5579995.jpg" width="54.5px" height="40.7px" id="image0"/>
+				<Text xmlns="sap.m" id="text3" text="{i18n>appTitle}"/>
+			</contentLeft>
+			<contentRight>
+				<Button xmlns:f="sap.f" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="button1" icon="sap-icon://person-placeholder" press="logIn"/>
+			</contentRight>
+			<!--<contentMiddle>-->
+			<!--	<Text xmlns="sap.m" text="title" id="text0"/>-->
+			<!--</contentMiddle>-->
+		</Bar>
+		<SplitApp id="mySplitApp" mode="HideMode"></SplitApp>
+	</Page>
+</mvc:View>

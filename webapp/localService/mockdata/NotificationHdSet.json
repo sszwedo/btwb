@@ -1,0 +1,46 @@
+[{
+	"IDWind": "001",
+	"Windm": "Windmill 1",
+	"Model": "Model 1",
+	"Power": 1478.75,
+	"Span": 3979.14,
+	"Heigh": 7348.3,
+	"Image": "",
+	"Type": "Success",
+	"Position": "14.969902;51.109342;0",
+	"__metadata": {
+		"uri": "WindmillItemsSet('IDWind%201')",
+		"type": "ZKBUEXCENTER_SRV.WindmillItems"
+	},
+	"MDate": "/Date(1575327600000)/"
+}, {
+	"IDWind": "002",
+	"Windm": "Windmill 2",
+	"Model": "Model 2",
+	"Power": 5571.71,
+	"Span": 5044.32,
+	"Heigh": 3112.44,
+	"Image": "",
+	"Type": "Warning",
+	"Position": "14.971962;51.114300;0",
+	"__metadata": {
+		"uri": "WindmillItemsSet('IDWind%202')",
+		"type": "ZKBUEXCENTER_SRV.WindmillItems"
+	},
+	"MDate": "/Date(1577660400000)/"
+}, {
+	"IDWind": "003",
+	"Windm": "Windmill 3",
+	"Model": "Model 3",
+	"Power": 8866.4,
+	"Span": 2030.17,
+	"Heigh": 7571.73,
+	"Image": "",
+	"Type": "Error",
+	"Position": "14.955139;51.113006;0",
+	"__metadata": {
+		"uri": "WindmillItemsSet('IDWind%203')",
+		"type": "ZKBUEXCENTER_SRV.WindmillItems"
+	},
+	"MDate": "/Date(1571695200000)/"
+}]

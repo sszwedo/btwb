@@ -1,0 +1,13 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:f="sap.ui.layout.form" height="100%" controllerName="beat.beat.controller.Empty" xmlns:cc="beat.beat.control">
+	<Page xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="Empty0" title="Model: {Model}"
+		cd:w5g.dt.context="/NotificationHdSet">
+		<content>
+			<!--<Button id="idButton_Full" text="FullScreen" press="onPressButton"/>-->
+			<core:Fragment fragmentName="beat.beat.fragments.header" type="XML"/>
+			<core:Fragment fragmentName="beat.beat.fragments.icontab" type="XML"/>
+			<core:Fragment fragmentName="beat.beat.fragments.snn" type="XML"/>
+			<core:Fragment fragmentName="beat.beat.fragments.iot" type="XML"/>
+		</content>
+	</Page>
+</mvc:View>
