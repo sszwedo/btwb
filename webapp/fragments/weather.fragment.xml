@@ -15,7 +15,7 @@
 			</ColumnListItem>
 		</items>
 		<columns>
-			<Column>
+			<Column hAlign="Center">
 				<header>
 					<Label text="{forecast>name}"/>
 				</header>

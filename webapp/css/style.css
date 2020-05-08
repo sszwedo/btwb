@@ -1,15 +1,87 @@
- .redColor {
-     color: #cc1919;
- }
- 
- .greenColor {
-     color: #007833;
- }
- 
- .yellowColor {
-     color: #e4b400;
- }
- 
- .weatherwidget-io {
-     width: 100%;
- }
+/* windmill icon colors */
+
+.redColor {
+    color: #BB0000;
+    text-shadow: 0 0 0.025rem #BB0000;
+}
+
+.greenColor {
+    color: #2B7D2B;
+    text-shadow: 0 0 0.025rem #2B7D2B;
+}
+
+.yellowColor {
+    color: #E78C07;
+    text-shadow: 0 0 0.025rem #E78C07;
+}
+
+
+/* weather widget width*/
+
+.weatherwidget-io {
+    width: 100%;
+}
+
+
+/* top bar */
+
+.text0 {
+    font-size: 16px;
+    color: #666666;
+    text-shadow: 0 0 0.125rem #ffffff;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
+}
+
+.bar0 {
+    box-shadow: inset 0 -0.0625rem #eff4f9;
+}
+
+.sapMBarLeft {
+    margin-left: 10px;
+}
+
+.sapMBarRight {
+    margin-right: 10px;
+}
+
+
+/* master bar */
+
+.sapMSplitContainerMaster .sapMPageHeader {
+    background-color: #eff4f9;
+    box-shadow: inset 0 -0.0625rem #d1e0ee;
+}
+
+
+/* master list top */
+
+#__toolbar0 {
+    background-color: #fafafa;
+}
+
+#container-beat---idMain--list2-header {
+    background-color: #fafafa;
+    font-size: 16px;
+    color: #666666;
+    text-shadow: 0 0 0.125rem #ffffff;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+/* sort button */
+
+#success0 {
+    height: 15px;
+    width: 15px;
+}
+
+#warning0 {
+    height: 15px;
+    width: 15px;
+}
+
+#error0 {
+    height: 15px;
+    width: 15px;
+}

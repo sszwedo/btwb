@@ -18,9 +18,9 @@
 					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
 				<Property Name="Image" Type="Edm.String" Nullable="false" MaxLength="500" sap:unicode="false" sap:label="Image SRC" sap:creatable="false"
 					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-				<Property Name="Type" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Street" sap:creatable="false"
+				<Property Name="Type" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Type" sap:creatable="false"
 					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-				<Property Name="Position" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="House" sap:creatable="false"
+				<Property Name="Position" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Position" sap:creatable="false"
 					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="MDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="Last Maintenance Date"
 					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><NavigationProperty Name="NotifHdToItemsNav" Relationship="ZKBUEXCENTER_SRV.ToItems" FromRole="FromRole_ToItems" ToRole="ToRole_ToItems"/>
 			</EntityType>
