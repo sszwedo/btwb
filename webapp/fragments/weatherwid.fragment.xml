@@ -1,5 +1,0 @@
-<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
-	<FlexBox renderType="Bare" height="100%" width="100%">
-		<html:a class="weatherwidget-io" href="https://forecast7.com/en/51d1514d97/gorlitz/" data-theme="weather_one" width="100%"/>
-	</FlexBox>
-</core:FragmentDefinition>
