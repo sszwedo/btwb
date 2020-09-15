@@ -1,7 +1,0 @@
-<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
-	<ViewSettingsDialog id="viewSettingsDialog" confirm=".onConfirmViewSettingsDialog">
-		<sortItems>
-			<ViewSettingsItem text="VSISort" key="Windm" selected="true"/>
-		</sortItems>
-	</ViewSettingsDialog>
-</core:FragmentDefinition>
